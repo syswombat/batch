@@ -1,8 +1,8 @@
 #/bin/bash
 # make a scriptsdir
 cd /
-mkdir scripts
-cd /scripts
+mkdir wombat_scripts
+cd /wombat_scripts
 
 wget -N https://raw.githubusercontent.com/syswombat/batch/master/linuxbasic2.sh
 chmode u+x linuxbasic2.sh
@@ -15,4 +15,4 @@ clear
 apt-get upgrade -y
 cd /
 echo "bye bye"
-./scripts/linuxbasic2.sh
+./wombat_scripts/linuxbasic2.sh

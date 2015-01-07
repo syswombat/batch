@@ -5,7 +5,7 @@ cd /
 apt-get update -y
 apt-get upgrade -y
 apt-get install -y munin-node munin-plugins-extra
-echo allow ^10\.147\.42\.62$ >> /etc/munin/munin-node.conf
+echo 'allow ^10\.147\.42\.62$' >> /etc/munin/munin-node.conf
 
 /etc/init.d/munin-node restart
 Hostname -I

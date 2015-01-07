@@ -16,7 +16,7 @@ apt-get install ntp ntpdate -y
 cd /
 cd /ect
 rm localtime
-ln -s /usr/share/zoneinfo/europe/zurich localtime
+ln -s /usr/share/zoneinfo/Europe/Zurich localtime
 cd /
 
 # rootEmail send to Email Adress
@@ -27,7 +27,8 @@ cd /
 
 # the end 
 clear
-Echo "Zeit / Datum Kontrollieren"
-Date
-Echo "Host Name"
+echo Zeit / Datum Kontrollieren
+date
+echo Host Name:
 hostname -I
+hostname

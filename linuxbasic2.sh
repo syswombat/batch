@@ -3,15 +3,13 @@
 cd /
 apt-get update -y
 apt-get install vim-nox -y
-
-
-
+echo set number > ~/.vimrc
 apt-get update -y
 apt-get upgrade -y
-
+cd /
 
 # Install a Timeserver NTP
-apt-get install 
+apt-get install ntp ntpdate -y
 
 # rootEmail send to Email Adress
 cd /

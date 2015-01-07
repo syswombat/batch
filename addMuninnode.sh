@@ -1,6 +1,7 @@
 #!bin/bash
 # should only work on my system 
 # to create automatic a basic Munin-Node not a Master
+cd /
 apt-get update -y
 apt-get upgrade -y
 apt-get install -y munin-node munin-plugins-extra

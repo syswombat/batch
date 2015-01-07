@@ -1,8 +1,17 @@
 # Part 2 of the Linux Basic installation
 # VIM NOX Installation Set Line Number
+cd /
 apt-get update -y
 apt-get install vim-nox -y
 
+
+
+apt-get update -y
+apt-get upgrade -y
+
+
+# Install a Timeserver NTP
+apt-get install 
 
 # rootEmail send to Email Adress
 cd /

@@ -9,7 +9,15 @@ apt-get upgrade -y
 cd /
 
 # Install a Timeserver NTP
+clear
+echo "NTP Server wird installiert....."
+echo "Zeitzone Europa Zürich werden gesetzt ..."
 apt-get install ntp ntpdate -y
+cd /
+cd /ect
+rm localtime
+ln -s /usr/share/zoneinfo/europe/zurich localtime
+cd /
 
 # rootEmail send to Email Adress
 cd /
@@ -17,15 +25,9 @@ cd /root
 echo yourEmail@yourDomain.ch >> /.forward
 cd / 
 
-# set Local Time CH Zürich
-cd /
-cd /ect
-rm localtime
-ln -s /usr/share/zoneinfo/europe/zurich localtime
-cd /
-
 # the end 
+clear
 Echo "Zeit / Datum Kontrollieren"
 Date
 Echo "Host Name"
-hostname
+hostname -I

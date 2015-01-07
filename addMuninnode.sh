@@ -8,4 +8,4 @@ echo "allow ^10\.147\.42\.62$" >> /etc/munin/munin-node.conf
 
 /etc/init.d/munin-node restart
 Hostname -I
-echo "add the IP Adresse to the Munin-Master file"
+echo add the IP Adresse to the Munin-Master file

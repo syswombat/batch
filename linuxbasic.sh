@@ -3,10 +3,13 @@
 cd /
 mkdir scripts
 cd /scripts
+
 wget -N https://raw.githubusercontent.com/syswombat/batch/master/linuxbasic2.sh
-wget -N https://raw.githubusercontent.com/syswombat/batch/master/addMuninnode.sh 
 chmode u+x linuxbasic2.sh
+
+wget -N https://raw.githubusercontent.com/syswombat/batch/master/addMuninnode.sh 
 chmode u+x addMuninnode.sh
+clear
 apt-get update -y
 apt-get upgrade -y
 cd /

@@ -12,10 +12,10 @@ mkdir wombat_scripts
 cd /wombat_scripts
 
 wget -N https://raw.githubusercontent.com/syswombat/batch/master/linuxbasic2.sh
-chmode +x linuxbasic2.sh
+chmode +x /wombat_scripts/linuxbasic2.sh
 
 wget -N https://raw.githubusercontent.com/syswombat/batch/master/addMuninnode.sh 
-chmode +x addMuninnode.sh
+chmode +x /wombat_scripts/addMuninnode.sh
 
 apt-get update -y
 clear

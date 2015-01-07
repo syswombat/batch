@@ -16,12 +16,15 @@ chmode +x linuxbasic2.sh
 
 wget -N https://raw.githubusercontent.com/syswombat/batch/master/addMuninnode.sh 
 chmode +x addMuninnode.sh
-clear
+
 apt-get update -y
 clear
 apt-get upgrade -y
 clear
 cd /wombat_scripts/
+cd /wombat_scripts/
+
 echo ...
 echo bye bye.....
 echo ...
+echo ./linuxbasic2.sh

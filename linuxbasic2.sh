@@ -14,9 +14,9 @@ echo "NTP Server wird installiert....."
 echo "Zeitzone Europa Zürich werden gesetzt ..."
 apt-get install ntp ntpdate -y
 cd /
-cd /ect
+cd /ect/
 rm timezone
-ln -s /usr/share/zoneinfo/Europe/Zurich timezone
+ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 cd /
 
 # rootEmail send to Email Adress

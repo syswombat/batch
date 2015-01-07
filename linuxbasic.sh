@@ -20,8 +20,8 @@ clear
 apt-get update -y
 clear
 apt-get upgrade -y
-cd /
+clear
+cd /wombat_scripts
 echo ...
 echo bye bye.....
 echo ...
-cd /wombat_scripts

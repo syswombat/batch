@@ -15,8 +15,8 @@ echo "Zeitzone Europa Zürich werden gesetzt ..."
 apt-get install ntp ntpdate -y
 cd /
 cd /ect
-rm localtime
-ln -s /usr/share/zoneinfo/Europe/Zurich localtime
+rm timezone
+ln -s /usr/share/zoneinfo/Europe/Zurich timezone
 cd /
 
 # rootEmail send to Email Adress

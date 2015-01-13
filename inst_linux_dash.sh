@@ -1,6 +1,6 @@
 ################################################################################
-#/usr/bin/bash
-# will Install Linux Dash on a Debian Server
+#!/usr/bin/bash
+# will Install Linux Dash on linux
 # if wget is not working do a ///  apt-get install ca-certificates
 # chmod +x inst_linux_dash.sh
 # run with ./inst_linux_dash.sh

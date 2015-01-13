@@ -15,5 +15,18 @@ apt-get install git -y
 
 service apache2 start
 
+case ´´ 
+debian)
+esac 
+
+
+
 cd /var/www
 git clone https://github.com/afaqurk/linux-dash.git
+========================
+case `date |cut -d" " -f1` in
+Mon) commands ;;
+Tue) commands ;;
+Wed) commands ;;
+...
+esac

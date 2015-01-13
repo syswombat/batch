@@ -6,6 +6,8 @@
 # run with ./inst_linux_dash.sh
 #
 #################################################################################
+linuxdistri=version | grep 
+###
 
 apt-get update -y
 apt-get upgrade -y
@@ -15,10 +17,12 @@ apt-get install git -y
 
 service apache2 start
 
-case ´´ 
-debian)
+case $linuxdistri
+debian) cd /var/www ;;
+ubuntu) cd /var/www ;;
 esac 
 
+git clone https://github.com/afaqurk/linux-dash.git
 
 
 cd /var/www

@@ -4,9 +4,9 @@
 # blank virtuell Server I use: 1core, 20GB Disk, 1GB RAM
 # debian 7.8 https://www.debian.org/
 # wget this file
-# wget https://raw.githubusercontent.com/syswombat/batch/master/Inst-Selfoss.sh 
-# chmod 755 Inst-Selfoss.sh
-# ./Inst-Selfoss.sh
+# wget https://raw.githubusercontent.com/syswombat/batch/master/inst-selfoss.sh 
+# chmod 755 inst-selfoss.sh
+# ./inst-selfoss.sh
 
 cd /
 apt-get -y update

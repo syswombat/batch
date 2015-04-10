@@ -4,7 +4,9 @@
 # blank virtuell Server to use
 # debian 7.8 https://www.debian.org/
 # wget this file
-# 
+# wget https://raw.githubusercontent.com/syswombat/batch/master/Inst-Selfoss.sh 
+# chmod 755 Inst-Selfoss.sh
+# ./Inst-Selfoss.sh
 
 cd /
 apt-get -y update

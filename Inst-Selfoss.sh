@@ -1,7 +1,7 @@
 #!/bin/bash
 # 
 # Script to Install http://selfoss.aditu.de/
-# blank virtuell Server to use
+# blank virtuell Server I use 1core 20GB 1GB RAM
 # debian 7.8 https://www.debian.org/
 # wget this file
 # wget https://raw.githubusercontent.com/syswombat/batch/master/Inst-Selfoss.sh 

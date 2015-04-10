@@ -21,6 +21,12 @@ apt-get install unzip
 apt-get -y update
 apt-get -y upgrade
 
+php-settings-update 'date.timezone' 'Europe/London'
+php-settings-update mod_rewrite enabled
+php-settings-update mod_headers enabled
+
+service apache2 restart
+
 wget http://selfoss.aditu.de/selfoss-2.12.zip
 unzip selfoss-2.12.zip -d destination_folder
 

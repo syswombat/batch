@@ -20,16 +20,22 @@ apt-get install apache2
 apt-get install php5 libapache2-mod-php5
 apt-get install unzip
 apt-get -y update
-apt-get -y upgrade
+apt-get -y upgrade 
 
 php-settings-update 'date.timezone' 'Europe/London'
 php-settings-update mod_rewrite enabled
 php-settings-update mod_headers enabled
 
 service apache2 restart
-
+cd /var/www/
+mkdir selfoss
+cd /selfoss/
 wget http://selfoss.aditu.de/selfoss-2.12.zip
-unzip selfoss-2.12.zip -d destination_folder
+unzip selfoss-2.12.zip
+
+rm selfoss-2.12.zip
+
+sudo chown -R www-data:www-data /var/www/selfoss
 
 apt-get -y update
 apt-get -y upgrade

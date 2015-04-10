@@ -1,3 +1,5 @@
+#!/bin/bash
+# 
 # Script to Install http://selfoss.aditu.de/
 # blank virtuell Server to use
 # debian 7.8 https://www.debian.org/

@@ -1,0 +1,9 @@
+# Script to Install http://selfoss.aditu.de/
+# blank virtuell Server to use
+
+cd /
+apt-get -y update
+apt-get -y upgrade
+apt-get install mysql-server mysql-client
+apt-get install apache2
+apt-get install php5 libapache2-mod-php5

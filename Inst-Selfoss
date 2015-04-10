@@ -1,5 +1,8 @@
 # Script to Install http://selfoss.aditu.de/
 # blank virtuell Server to use
+# debian 7.8 https://www.debian.org/
+# wget this file
+# 
 
 cd /
 apt-get -y update

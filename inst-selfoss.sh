@@ -2,7 +2,7 @@
 # 
 # Script to Install http://selfoss.aditu.de/
 # blank virtuell Server I use: 1core, 20GB Disk, 1GB RAM
-# debian 7.8 https://www.debian.org/
+# debian 7.0 template  https://www.debian.org/
 # wget this file
 # wget https://raw.githubusercontent.com/syswombat/batch/master/inst-selfoss.sh 
 # chmod 755 inst-selfoss.sh

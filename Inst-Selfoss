@@ -7,3 +7,8 @@ apt-get -y upgrade
 apt-get install mysql-server mysql-client
 apt-get install apache2
 apt-get install php5 libapache2-mod-php5
+apt-get install unzip
+apt-get -y update
+apt-get -y upgrade
+
+wget http://selfoss.aditu.de/selfoss-2.12.zip

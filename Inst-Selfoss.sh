@@ -21,8 +21,6 @@ apt-get install unzip
 apt-get -y update
 apt-get -y upgrade
 
-# i use Munin too
-
 
 wget http://selfoss.aditu.de/selfoss-2.12.zip
 unzip selfoss-2.12.zip -d destination_folder

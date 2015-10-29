@@ -14,6 +14,8 @@
 # Once you made the above change restart your SSH server:
 # /etc/init.d/ssh restart
 # [ ok ] Restarting ssh (via systemctl): ssh.service.
+# ----------------------------------------------------------------------
+# https://www.howtoforge.com/tutorial/perfect-server-debian-8-jessie-apache-bind-dovecot-ispconfig-3/
 #################################################################################
 # apt-get install vim-nox -y
 # /etc/network/interfaces 
@@ -24,16 +26,9 @@ echo em@ail >> /.forward
 echo set number > ~/.vimrc
 apt-get install ntp ntpdate -y
 
-
-wget -N https://raw.githubusercontent.com/syswombat/batch/master/linuxbasic2.sh
-chmod +x /wombat_scripts/linuxbasic2.sh
-
-wget -N https://raw.githubusercontent.com/syswombat/batch/master/addMuninnode.sh 
-chmod +x /wombat_scripts/addMuninnode.sh
-
 apt-get update -y
 clear
 apt-get upgrade -y
 clear
-cd /wombat_scripts/
-cd /wombat_scripts/
+apt-get install postfix postfix-mysql postfix-doc mariadb-client mariadb-server openssl getmail4 rkhunter binutils dovecot-imapd dovecot-pop3d dovecot-mysql dovecot-sieve dovecot-lmtpd sudo
+

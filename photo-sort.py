@@ -1,4 +1,4 @@
-# --------------------------------------------------------------
+# ---------------------------------------------------------------------------------
 # create a directory and subdirectory
 # /photos/newPhotos
 # /photos/sortedPhotos
@@ -9,8 +9,10 @@
 # yyyy                     | 2016
 # yyyy/yyyy_mm             | 2016/2016_07
 # yyyy/yyyy_mm/yyyy_mm_dd  | 2016/2016_07/2016_07_14
+# 
+# the jpg file will be in the root of the date directory (yyyy/yyyy_mm/yyyy_mm_dd)
 # file last modified 21.03.2017 by (c) vincent kocher
-# --------------------------------------------------------------
+# ----------------------------------------------------------------------------------
 
 import shutil
 import os
@@ -21,7 +23,7 @@ START=/photos/newPhotos
 ZIEL=/photos/sortedPhotos
 
 RAW=nef,nrw,mef,raw,rwl,dng,RW2
-Movie=
+Movie=MP4
 
 # end Variable
 

@@ -1,5 +1,9 @@
 # --------------------------------------------------------------
-# add this file in the unsorted photo directory
+# create a directory and subdirectory
+# /photos/newPhotos
+# /photos/sortedPhotos
+# add this file in the newPhotos directory
+# wget https://github.com/syswombat/batch/edit/master/photo-sort.py
 # chmode 777 photo-sort.py
 # the file structure of the sorted photo will be
 # yyyy                     | 2016
@@ -13,8 +17,8 @@ import os
 import datetime
 
 #Variablen change it
-START=
-ZIEL=
+START=/photos/newPhotos
+ZIEL=/photos/sortedPhotos
 
 RAW=nef,nrw,mef,raw,rwl,dng,RW2
 Movie=

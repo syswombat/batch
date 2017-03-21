@@ -11,7 +11,11 @@
 # yyyy/yyyy_mm             | 2016/2016_07
 # yyyy/yyyy_mm/yyyy_mm_dd  | 2016/2016_07/2016_07_14
 # 
+# to sort the RAW an Movies it will also create a
+# 2016/2016_07/2016_07_14/RAW
+# 2016/2016_07/2016_07_14/Movies
 # the jpg file will be in the root of the date directory (yyyy/yyyy_mm/yyyy_mm_dd)
+#
 # file last modified 21.03.2017 by (c) vincent kocher
 # ----------------------------------------------------------------------------------
 

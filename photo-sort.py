@@ -1,8 +1,13 @@
 # --------------------------------------------------------------
 # add this file in the unsorted photo directory
 # chmode 777 photo-sort.py
-#
+# the file structure of the sorted photo will be
+# yyyy                     | 2016
+# yyyy/yyyy_mm             | 2016/2016_07
+# yyyy/yyyy_mm/yyyy_mm_dd  | 2016/2016_07/2016_07_14
+# file last modified 21.03.2017 by (c) vincent kocher
 # --------------------------------------------------------------
+
 import shutil
 import os
 import datetime
@@ -11,7 +16,7 @@ import datetime
 START=
 ZIEL=
 
-RAW=nef,nrw,mef,raw,rwl,dng,rw2
+RAW=nef,nrw,mef,raw,rwl,dng,RW2
 Movie=
 
 # end Variable

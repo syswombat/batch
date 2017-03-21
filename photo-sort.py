@@ -3,6 +3,7 @@
 # /photos/newPhotos
 # /photos/sortedPhotos
 # add this file in the newPhotos directory
+# cd /photos/sortedPhotos
 # wget https://raw.githubusercontent.com/syswombat/batch/master/photo-sort.py
 # chmode 777 photo-sort.py
 # the file structure of the sorted photo will be

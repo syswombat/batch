@@ -1,9 +1,10 @@
-apt-get update
-apt-get upgrade -y
-apt-get install openjdk-7-jdk -y
-apt-get update -y
-apt-get upgrade -y
+apt update
+apt upgrade -y
+apt install openjdk-7-jdk -y
+apt update -y
+apt upgrade -y
 wget http://sourceforge.net/projects/opensearchserve/files/Stable_release/1.5.12/opensearchserver-1.5.12-b940.deb
 dpkg -i opensearchserver-1.5.12-b940.deb
-apt-get update -y
-apt-get upgrade -y
+apt update -y
+apt upgrade -y
+apt-get autoremove -y

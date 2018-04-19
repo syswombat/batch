@@ -1,0 +1,5 @@
+# my static IP configuration to use with Pi & Debian 9: 
+interface eth0 
+static ip_address=10.147.42.32/24 
+static routers=10.147.42.7 
+static domain_name_servers=10.147.42.68 8.8.8.8

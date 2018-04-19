@@ -1,0 +1,38 @@
+# /etc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help  
+ 
+driftfile /var/lib/ntp/ntp.drift  
+  
+# Enable this if you want statistics to be logged.  
+statsdir /var/log/ntpstats/  
+statistics loopstats peerstats clockstats  
+filegen loopstats file loopstats type day enable 
+filegen peerstats file peerstats type day enable 
+filegen clockstats file clockstats type day enable 
+ 
+# You do need to talk to an NTP server or two (or three). 
+server ntp.kozo.ch
+ 
+# By default, exchange time with everybody, but don't allow configuration. 
+35 restrict -4 default kod notrap nomodify nopeer noquery limited 
+36 restrict -6 default kod notrap nomodify nopeer noquery limited 
+37 
+38 # Local users may interrogate the ntp server more closely. 
+39 restrict 127.0.0.1 
+40 restrict ::1 
+41 
+42 # Needed for adding pool entries 
+43 restrict source notrap nomodify noquery 
+44 
+45 # Clients from this (example!) subnet have unlimited access, but only if 
+46 # cryptographically authenticated. 
+47 #restrict 192.168.123.0 mask 255.255.255.0 notrust 
+48 
+49 
+50 # If you want to provide time to your local subnet, change the next line. 
+51 # (Again, the address is an example only.) 
+52 #broadcast 192.168.123.255 
+53 
+54 # If you want to listen to time broadcasts on your local subnet, de-comment the 
+55 # next lines.  Please do this only if you trust everybody on the network! 
+56 #disable auth 
+57 #broadcastclient

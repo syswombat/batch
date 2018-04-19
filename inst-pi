@@ -1,1 +1,26 @@
+################################################################################
+#!/usr/bin/bash
+# Test to install all automatic on a Pi
+# if wget is not working do a ///  apt-get install ca-certificates
+# 
+# chmod +x inst_linux_dash.sh
+# run with ./inst_linux_dash.sh
+#
+#################################################################################
+linuxdistrib=cat /etc/*-release | grep 
+###
 
+apt-get update -y
+apt-get upgrade -y
+apt-get install apache2 apache2-utils -y
+apt-get install php5 curl php5-curl php5-json -y
+apt-get install git -y
+
+service apache2 start
+
+case $linuxdistrib in
+debian) cd /var/www ;;
+ubuntu) cd /var/www/html ;;
+esac 
+
+git clone https://github.com/afaqurk/linux-dash.git

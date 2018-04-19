@@ -26,12 +26,13 @@ echo set number >> ~/.vimrc
 wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/smart-Linux-update -O - >> /usr/local/bin/update
 chmod +x /usr/local/bin/update
 
-# add Fail2Ban
+# add Fail2Ban for SSH
 apt install fail2ban -y
 wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/jail.local -O - >> /etc/fail2ban/jail.local
 
-
-
+# NTP Client and add local NTP Server
+apt install -y NTP
+mv /etc/ntp.conf /etc/ntp.conf.org
 
 
 ### reboot

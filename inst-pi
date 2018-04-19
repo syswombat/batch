@@ -9,8 +9,21 @@
 #################################################################################
 
 # add a Fix IP Address
+wget https://raw.githubusercontent.com/syswombat/batch/master/snippets/pi-fix-ip -O - >> /etc/dhcpcd.conf
 
-###
+# change localhost and Host
+mv /etc/hosts /etc/hosts.org
+10.147.42.253 PI-Name > /etc/hosts
+127.0.1.1     PI-Name >> /etc/hosts
+
+mv /etc/hostname /etc/hostname.org
+PI-Name > /etc/hostname
+
+# add VIM and set number
+apt install vim-nox -y
+echo set number >> ~/.vimrc
+
+# quick update and upgrade call up with 
 apt update -y
 apt upgrade -y
 apt-get autoremove

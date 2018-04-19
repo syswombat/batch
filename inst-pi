@@ -15,7 +15,6 @@ wget https://raw.githubusercontent.com/syswombat/batch/master/snippets/pi-fix-ip
 mv /etc/hosts /etc/hosts.org
 10.147.42.253 PI-Name > /etc/hosts
 127.0.1.1     PI-Name >> /etc/hosts
-
 mv /etc/hostname /etc/hostname.org
 PI-Name > /etc/hostname
 
@@ -24,6 +23,16 @@ apt install vim-nox -y
 echo set number >> ~/.vimrc
 
 # quick update and upgrade call up with 
-apt update -y
-apt upgrade -y
-apt-get autoremove
+wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/smart-Linux-update -O - >> /usr/local/bin/update
+chmod +x /usr/local/bin/update
+
+# add Fail2Ban
+apt install fail2ban -y
+wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/jail.local -O - >> /etc/fail2ban/jail.local
+
+
+
+
+
+### reboot
+reboot

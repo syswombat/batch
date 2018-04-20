@@ -12,6 +12,7 @@
 wget https://raw.githubusercontent.com/syswombat/batch/master/snippets/pi-fix-ip -O - >> /etc/dhcpcd.conf
 
 # change localhost and Host
+# add the correct IP Address
 mv /etc/hosts /etc/hosts.org
 10.147.42.253 PI-Name > /etc/hosts
 127.0.1.1     PI-Name >> /etc/hosts
@@ -34,6 +35,17 @@ wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/jail.lo
 apt install -y NTP
 mv /etc/ntp.conf /etc/ntp.conf.org
 
+# add Munin Client 
+# don't forget to change the config in the Munin Master too
+apt install -y munin-node munin-plugins-extra
+echo allow ^10\.147\.42\.63$ >> /etc/munin/munin-node.conf
+/etc/init.d/munin-node restart
+### remove what you don't need
+rm /etc/munin/plugins/test
+
+
+munin-node-configure
+/etc/init.d/munin-node restart
 
 ### reboot
 reboot

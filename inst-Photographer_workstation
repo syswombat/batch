@@ -37,7 +37,6 @@ apt install -y xfonts-base
 apt install -y xfonts-100dpi
 apt install -y dbus-x11
 apt install -y sddm
-apt install -y
 
 # KDE Desktop
 apt install -y

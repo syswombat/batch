@@ -39,20 +39,44 @@ apt install -y dbus-x11
 apt install -y sddm
 
 # KDE Desktop
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
-apt install -y
+apt install -y systemsettings
+apt install -y kdialog 
+apt install -y keditbookmarks 
+apt install -y kfind 
+apt install -y konqueror 
+apt install -y kscreen 
+apt install -y kde-config-gtk-style 
+apt install -y kde-config-gtk-style-preview
+apt install -y gtk3-engines-breeze
+apt install -y khotkeys
+apt install -y kde-config-screenlocker
+apt install -y kwin-x11
+apt install -y kwin-addons
+apt install -y sddm-theme-breeze
+apt install -y kde-config-sddm
+apt install -y libpam-kwallet5
+apt install -y kde-l10n-de
+apt install -y kio-extras
+apt install -y kdegraphics-thumbnailers
 
-
+# KDE Zusatzpacket
+apt install -y ark
+apt install -y gwenview
+apt install -y kate
+apt install -y kcalc
+apt install -y kde-plasma-desktop
+apt install -y kde-spectacle
+apt install -y kwalletmanager
+apt install -y plasma-dataengines-addons
+apt install -y okular plasma-pa
+apt install -y kmix
+apt install -y plasma-runners-addons
+apt install -y plasma-wallpapers-addons
+apt install -y plasma-widgets-addons
+apt install -y polkit-kde-agent-1
+apt install -y sweeper
+apt install -y powerdevil
+apt install -y kmenuedit
+apt install -y kdeconnect
+apt install -y quassel
 

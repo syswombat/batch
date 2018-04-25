@@ -9,21 +9,8 @@
 # https://mywiki.bluelupo.net/wiki/Manuelle_Installation_des_KDE-Desktops_aus_dem_Debian_Netinstall_ISO
 #################################################################################
 
-# change localhost and Host
-# add the correct IP Address
-mv /etc/hosts /etc/hosts.org
-10.147.42.253 PI-Name > /etc/hosts
-127.0.1.1     PI-Name >> /etc/hosts
-mv /etc/hostname /etc/hostname.org
-PI-Name > /etc/hostname
-
-# add VIM and set number
-apt install vim-nox -y
-echo set number >> ~/.vimrc
-
-# quick update and upgrade call up with 
-wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/smart-Linux-update -O - >> /usr/local/bin/update
-chmod +x /usr/local/bin/update
+wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/99my -O - >> /etc/apt/apt.conf.d/99my
+update
 
 # Grafischer X-Server
 apt install -y xserver-xorg

@@ -1,0 +1,7 @@
+// my apt defaults 
+APT::Get::AutomaticRemove "0";
+APT::Get::HideAutoRemove "1";
+APT::Install-Recommends "0";
+APT::Install-Suggests "0";
+Debug::pkgAutoRemove "0";
+// Acquire::PDiffs "0";

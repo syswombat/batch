@@ -1,1 +1,59 @@
+################################################################################
+#!/usr/bin/bash
+# Test to install all automatic on a KVM or PC with Debian 9 Basic
+# if wget is not working do a ///  apt-get install ca-certificates
+# wget https://raw.githubusercontent.com/syswombat/batch/inst-Photographer_workstation -O - > /tmp/inst-Photographer_workstation
+# chmod +x /tmp/inst-Photographer_workstation
+# run with inst-Photographer_workstation
+# This file will run on my Network
+# https://mywiki.bluelupo.net/wiki/Manuelle_Installation_des_KDE-Desktops_aus_dem_Debian_Netinstall_ISO
+#################################################################################
+
+# change localhost and Host
+# add the correct IP Address
+mv /etc/hosts /etc/hosts.org
+10.147.42.253 PI-Name > /etc/hosts
+127.0.1.1     PI-Name >> /etc/hosts
+mv /etc/hostname /etc/hostname.org
+PI-Name > /etc/hostname
+
+# add VIM and set number
+apt install vim-nox -y
+echo set number >> ~/.vimrc
+
+# quick update and upgrade call up with 
+wget https://raw.githubusercontent.com/syswombat/batch/master/F-snippets/smart-Linux-update -O - >> /usr/local/bin/update
+chmod +x /usr/local/bin/update
+
+# Grafischer X-Server
+apt install -y xserver-xorg
+apt install -y xserver-xorg-input-evdev
+apt install -y xserver-xorg-input-synaptics
+apt install -y x11-xserver-utils
+apt install -y x11-session-utils
+apt install -y x11-utils
+apt install -y xinit
+apt install -y xfonts-base
+apt install -y xfonts-100dpi
+apt install -y dbus-x11
+apt install -y sddm
+apt install -y
+
+# KDE Desktop
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+apt install -y
+
+
 

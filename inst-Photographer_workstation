@@ -67,3 +67,10 @@ apt install -y kmenuedit
 apt install -y kdeconnect
 apt install -y quassel
 
+# Install Vuescan for scanner  9.2.23 on 64 bit 
+wget -c www.hamrick.com/files/vuex6492.tgz
+tar -xzvf vuex6492.tgz
+cd VueScan
+chmod +x vuescan
+./vuescan
+

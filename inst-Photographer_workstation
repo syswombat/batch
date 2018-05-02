@@ -74,3 +74,5 @@ cd VueScan
 chmod +x vuescan
 ./vuescan
 
+# virtual Dub
+

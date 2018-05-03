@@ -76,3 +76,23 @@ chmod +x vuescan
 
 # virtual Dub
 
+
+# RawTherapee
+apt install -y rawtherapee
+
+# Gimp
+apt install -y gimp
+apt install -y gimp-dcraw gimp-ufraw
+
+# DarkTable
+apt install -y darktable
+
+# LightZone
+apt install -y lightzone
+
+# phatch - Phot and Patch
+apt install -y phatch
+
+# Hugin - Panorama
+apt install -y hugin
+

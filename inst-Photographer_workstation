@@ -101,10 +101,25 @@ apt install -y hugin
 apt install -y digikam
 
 # kdenlive
-apt-add-repository ppa:kdenlive/kdenlive-stable && apt update
+apt-add-repository ppa:kdenlive/kdenlive-stable
+apt update
 apt install -y kdenlive
+
+# Geeqie
+apt install -y geeqie
+
+# XNView
+add-apt-repository ppa:dhor/myway
+apt update
+apt install -y xnview
+
+# MaPiVi
+add-apt-repository ppa:dhor/myway
+apt update -y
+apt install -y mapivi
 
 # remove all added PPA
 apt install -y ppa-purge
 ppa-purge ppa:hugin/hugin-builds
 ppa-purge ppa:kdenlive/kdenlive-stable
+ppa-purge ppa:dhor/myway

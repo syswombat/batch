@@ -90,9 +90,21 @@ apt install -y darktable
 # LightZone
 apt install -y lightzone
 
-# phatch - Phot and Patch
+# phatch - Photo and Patch
 apt install -y phatch
 
 # Hugin - Panorama
+add-apt-repository ppa:hugin/hugin-builds
 apt install -y hugin
 
+# digiKAM
+apt install -y digikam
+
+# kdenlive
+apt-add-repository ppa:kdenlive/kdenlive-stable && apt update
+apt install -y kdenlive
+
+# remove all added PPA
+apt install -y ppa-purge
+ppa-purge ppa:hugin/hugin-builds
+ppa-purge ppa:kdenlive/kdenlive-stable

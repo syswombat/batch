@@ -3,7 +3,7 @@
 # if wget is not working do a ///  apt-get install ca-certificates
 # wget https://raw.githubusercontent.com/syswombat/batch/inst-Photographer-workstation -O - >> /tmp/inst-Photographer-workstation
 # chmod +x /tmp/inst-Photographer-workstation
-# run with inst-Photographer-workstation
+# run with ./inst-Photographer-workstation
 # This file will run on my Network
 # https://mywiki.bluelupo.net/wiki/Manuelle_Installation_des_KDE-Desktops_aus_dem_Debian_Netinstall_ISO
 #################################################################################

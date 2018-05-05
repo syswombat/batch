@@ -1,10 +1,9 @@
-################################################################################
 #!/usr/bin/bash
 # Test to install all automatic on a KVM or PC with Debian 9 Basic
 # if wget is not working do a ///  apt-get install ca-certificates
-# wget https://raw.githubusercontent.com/syswombat/batch/inst-Photographer_workstation -O - > /tmp/inst-Photographer_workstation
-# chmod +x /tmp/inst-Photographer_workstation
-# run with inst-Photographer_workstation
+# wget https://raw.githubusercontent.com/syswombat/batch/inst-Photographer-workstation -O - >> /tmp/inst-Photographer-workstation
+# chmod +x /tmp/inst-Photographer-workstation
+# run with inst-Photographer-workstation
 # This file will run on my Network
 # https://mywiki.bluelupo.net/wiki/Manuelle_Installation_des_KDE-Desktops_aus_dem_Debian_Netinstall_ISO
 #################################################################################

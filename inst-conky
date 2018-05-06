@@ -1,1 +1,10 @@
+# https://www.lifewire.com/beginners-guide-to-conky-4043352
+
+
+apt install -y conky
+apt install -y conky conky-all
+
+cd ~
+mkdir .config
+cd .config
 

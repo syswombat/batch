@@ -1,7 +1,8 @@
 # https://www.lifewire.com/beginners-guide-to-conky-4043352
 
-
-apt install -y conky
+apt install -y lm-sensors
+apt install -y curl
+apt install -y hddtemp
 apt install -y conky conky-all
 
 cd ~

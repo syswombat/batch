@@ -5,6 +5,6 @@ apt install -y conky
 apt install -y conky conky-all
 
 cd ~
-mkdir config
-cd config
+mkdir conky-config
+cd conky-config
 

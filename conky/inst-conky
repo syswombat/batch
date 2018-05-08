@@ -8,5 +8,6 @@ apt install -y conky conky-all
 cd /
 mkdir conky-config
 cd /conky-config/
-wget 
+wget https://raw.githubusercontent.com/syswombat/batch/master/conky/conkyleftrc
+wget https://raw.githubusercontent.com/syswombat/batch/master/conky/conkyrightrc
 wget 

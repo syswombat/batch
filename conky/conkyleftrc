@@ -58,4 +58,10 @@ conky.config = {
  ${color lightgrey} ${top name 4} ${top pid 4} ${top cpu 4} ${top mem 4}
  ${color lightgrey} ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
  
+####################
+##   NETWORKING   ##
+####################
+${alignc}${color Tan2}TX           NETWORKING           RX
+${color}eno1: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}:eno1
+
  ]]

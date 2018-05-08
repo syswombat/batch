@@ -63,6 +63,6 @@ $hr
 ##   NETWORKING   ##
 ####################
 ${alignc}${color Tan2}TX           NETWORKING           RX
-${color}eno1: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}:eno1
+${color}eno1: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}
 
  ]]

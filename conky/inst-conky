@@ -1,4 +1,3 @@
-# https://www.lifewire.com/beginners-guide-to-conky-4043352
 
 apt install -y lm-sensors
 apt install -y curl
@@ -10,4 +9,5 @@ mkdir conky-config
 cd /conky-config/
 wget https://raw.githubusercontent.com/syswombat/batch/master/conky/conkyleftrc
 wget https://raw.githubusercontent.com/syswombat/batch/master/conky/conkyrightrc
-wget 
+wget https://raw.githubusercontent.com/syswombat/batch/master/conky/conkystartup.sh
+chmod 755 conkystartup.sh

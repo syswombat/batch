@@ -5,8 +5,8 @@ apt install -y curl
 apt install -y hddtemp
 apt install -y conky conky-all
 
-cd ~
-mkdir ~/conky-config
+cd /
+mkdir conky-config
 cd /conky-config/
-
-
+wget 
+wget 

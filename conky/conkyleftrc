@@ -34,6 +34,7 @@ conky.config = {
  
  conky.text = [[
  ${scroll 16 $nodename - $sysname $kernel on $machine | }
+ $machine
  $hr
  ${color grey}Uptime:$color $uptime
  ${color grey}Frequency (in MHz):$color $freq

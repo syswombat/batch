@@ -38,6 +38,15 @@ conky.config = {
  ${machine} 
  ${kernel}
  $hr
+
+
+Energy: ${alignr}${battery_percent all}%
+Battery
+${battery_percent BAT0}% ${alignr} ${battery_percent BAT1}%
+${battery_bar 4,107 BAT0} ${alignr}${battery_bar 4,107 BAT1}
+Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
+$hr
+ 
  ${color grey}Uptime:$color $uptime
  ${color grey}Frequency (in MHz):$color $freq
  ${color grey}Frequency (in GHz):$color $freq_g

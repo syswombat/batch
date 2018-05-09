@@ -38,14 +38,12 @@ conky.config = {
  $hr
 ###########################################
 ### Information about Battery and Power ###
-${color grey}Energy/Battery: ${alignr}${battery_percent all}%
-${battery_bar 7,500 BAT0}
-${color grey}Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
-${color grey}Computer Uptime:${alignr}$color $uptime
+ ${color grey}Energy/Battery: ${alignr}${battery_percent all}%
+ ${battery_bar 7,500 BAT0}
+ ${color grey}Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
+ ${color grey}Computer Uptime:${alignr}$color $uptime
 $hr
 ###########################################
- 
- 
  ${color grey}Frequency (in MHz):$color $freq
  ${color grey}Frequency (in GHz):$color $freq_g
  ${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
@@ -72,5 +70,5 @@ $hr
 ${alignc}${color Tan2}TX           NETWORKING           RX
 ${color}LAN: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}
 $hr
-Version: 180509-2025
+Version: 180509-2028
  ]]

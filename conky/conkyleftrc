@@ -39,10 +39,9 @@ conky.config = {
  ${machine} 
  ${kernel}
  $hr
-
 ## Information about Battery and Power ##
-Energy: ${alignr}${battery_percent all}%
-${battery_bar 10,250 BAT0}
+Energy/Battery: ${alignr}${battery_percent all}%
+${battery_bar 7,250 BAT0}
 Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
 $hr
 ## - ## 

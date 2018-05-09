@@ -33,9 +33,8 @@ conky.config = {
  }
  
  conky.text = [[
- ${nodename}
- ${machine} 
- ${kernel}
+ Hostname: ${nodename}
+ Kernel:   ${kernel}
  $hr
 ## Information about Battery and Power ##
 Energy/Battery: ${alignr}${battery_percent all}%
@@ -71,5 +70,5 @@ $hr
 ${alignc}${color Tan2}TX           NETWORKING           RX
 ${color}LAN: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}
 $hr
-Version: 180509-2007
+Version: 180509-2009
  ]]

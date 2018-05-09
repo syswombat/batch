@@ -33,8 +33,7 @@ conky.config = {
  }
  
  conky.text = [[
- ${scroll 16 $nodename - $sysname $kernel on $machine | }
- $hr
+ Version 180519-1959
  ${nodename}
  ${machine} 
  ${kernel}

@@ -66,7 +66,7 @@ $hr
 ####################
 ${alignc}${color Tan2}LAN: NETWORKING
 ${color 20a5e4}${upspeedgraph eno1}
-$alignr${downspeedgraph eno1}${color}
+${color 20a5e4}${downspeedgraph eno1}${color}
 $hr
-Version: 180509-2107 syswombat
+Version: 180509-2109 syswombat
  ]]

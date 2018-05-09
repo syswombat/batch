@@ -53,9 +53,7 @@ $hr
  $hr
  ${color grey}File systems:
   / $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
- ${color grey}Networking:
- Up:$color ${upspeed eno1} ${color grey} - Down:$color ${downspeed eno1}
- $hr
+  $hr
  ${color grey}Name              PID   CPU%   MEM%
  ${color lightgrey} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
  ${color lightgrey} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
@@ -67,7 +65,7 @@ $hr
 ##   NETWORKING   ##
 ####################
 ${alignc}${color Tan2}TX           NETWORKING           RX
-${color}LAN: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}
+${color}LAN: ${color 20a5e4}${upspeedgraph eno1}$alignr${downspeedgraph eno1}${color}
 $hr
-Version: 180509-2056 syswombat
+Version: 180509-2102 syswombat
  ]]

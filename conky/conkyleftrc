@@ -22,7 +22,6 @@ conky.config = {
      out_to_stderr = false,
      extra_newline = false,
      own_window = true,
-     own_window_transparent = true,
      own_window_class = 'Conky',
      own_window_type = 'desktop',
      stippled_borders = 0,
@@ -71,5 +70,5 @@ $hr
 ${alignc}${color Tan2}TX           NETWORKING           RX
 ${color}LAN: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}
 $hr
-Version: 180509-2038 syswombat
+Version: 180509-2040 syswombat
  ]]

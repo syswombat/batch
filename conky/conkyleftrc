@@ -40,7 +40,7 @@ conky.config = {
 ###########################################
 ### Information about Battery and Power ###
  ${color grey}Energy/Battery: ${alignr}${battery_percent all}%
- ${battery_bar 7,400 BAT0}
+ ${battery_bar 7,375 BAT0}
  ${color grey}Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
  ${color grey}Computer Uptime:${alignr}$color $uptime
 $hr

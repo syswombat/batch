@@ -37,10 +37,10 @@ conky.config = {
  Kernel:   ${kernel}
  $hr
 ## Information about Battery and Power ##
-Energy/Battery: ${alignr}${battery_percent all}%
+${color grey}Energy/Battery: ${alignr}${battery_percent all}%
 ${battery_bar 7,300 BAT0}
-Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
-${color grey}Uptime:$color $uptime
+${color grey}Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
+${color grey}Uptime:${alignr}$color $uptime
 $hr
 ## - ## 
  
@@ -71,5 +71,5 @@ $hr
 ${alignc}${color Tan2}TX           NETWORKING           RX
 ${color}LAN: ${color 20a5e4}${upspeed eno1}$alignr${downspeed eno1}${color}
 $hr
-Version: 180509-2010
+Version: 180509-2013
  ]]

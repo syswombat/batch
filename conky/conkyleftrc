@@ -11,7 +11,7 @@ conky.config = {
      draw_outline = false,
      draw_shades = false,
      use_xft = true,
-     font = 'DejaVu Sans Mono:size=12',
+     font = 'DejaVu Sans Mono:size=11',
      gap_x = 5,
      gap_y = 60,
      minimum_height = 5,
@@ -44,7 +44,7 @@ $hr
  bat0${battery_bar 7,375 BAT0}
  bat1${battery_bar 7,375 BAT1}
  bat2${battery_bar 7,375 BAT2}
- ${apcupsd_timeleft}
+ ${apcupsd_status}
  ${color grey}Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
  ${color grey}Computer Uptime:${alignr}$color $uptime
 $hr
@@ -75,5 +75,5 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-${font :size=8}Version: 180510-2309 syswombat
+${font :size=8}Version: 180510-2312 syswombat
  ]]

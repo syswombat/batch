@@ -64,10 +64,11 @@ $hr
 ####################
 ##   NETWORKING   ##
 ####################
+WAN IP: ${exec curl -s www.icanhazip.com}
 ${alignc}${color Tan2}LAN: NETWORKING
 ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-Version: 180509-2112 syswombat
+Version: 180510-2008 syswombat
  ]]

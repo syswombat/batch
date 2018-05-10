@@ -44,7 +44,7 @@ conky.config = {
  ${color grey}Computer Uptime:${alignr}$color $uptime
 $hr
 ###########################################
- ${color grey}Frequency (MHz):$color $freq / ${color grey}(GHz):$color $freq_g
+ ${color grey}Frequency (MHz):$color$freq / ${color grey}(GHz):$color$freq_g
  ${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
  ${color grey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
  ${color grey}CPU Usage:$color $cpu% ${cpubar 4}
@@ -70,5 +70,5 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-Version: 180510-2131 syswombat
+Version: 180510-2133 syswombat
  ]]

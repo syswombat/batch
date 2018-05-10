@@ -40,7 +40,7 @@ $hr
 ###########################################
 ### Information about Battery and Power ###
  ${color grey}Energy/Battery: $color${alignr}${battery_percent all}%
- ${battery_bar 7,375 BAT}
+ ${battery_bar 7,375 BAT0}
  ${color grey}Remaining time: ${alignr}${if_empty ${battery_time}}AC ${acpiacadapter}${else}${battery_time}${endif}
  ${color grey}Computer Uptime:${alignr}$color $uptime
 $hr
@@ -71,5 +71,5 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-${font :size=8}Version: 180510-2237 syswombat
+${font :size=8}Version: 180510-2241 syswombat
  ]]

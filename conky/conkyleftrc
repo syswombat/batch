@@ -64,12 +64,12 @@ $hr
 ####################
 ##   NETWORKING   ##
 ####################
-WAN IP: ${exec curl -s www.icanhazip.com}
-LAN IP: ${addr eno1}
+WAN IP: ${alignr}{exec curl -s www.icanhazip.com}
+LAN IP: ${alignr}{addr eno1}
 ${alignc}${color Tan2}LAN: NETWORKING
 ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-Version: 180510-2013 syswombat
+Version: 180510-2016 syswombat
  ]]

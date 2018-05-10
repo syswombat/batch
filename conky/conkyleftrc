@@ -70,5 +70,6 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-Version: 180510-2133 syswombat
+Version: 180510-2215 syswombat
+$color}APT: ${color D7D3C5}${execi 28800 ~/conky-config/debupdates.sh}
  ]]

@@ -35,7 +35,7 @@ conky.config = {
  conky.text = [[
  Hostname: ${nodename}
  Kernel:   ${kernel}
- $color}APT update: ${color D7D3C5}${execi 28800 ~/conky-config/debupdates.sh}
+ $color}APT update: ${color D7D3C5}${execi 28800 ~/bin/debupdates.sh}
 $hr
 ###########################################
 ### Information about Battery and Power ###
@@ -70,5 +70,5 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-${font :size=8}Version: 180510-2338 syswombat
+${font :size=8}Version: 180511-0842 syswombat
  ]]

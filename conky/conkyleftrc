@@ -23,17 +23,17 @@ conky.config = {
      extra_newline = false,
      ### plasma5 KDE ############
      ### https://github.com/brndnmtthws/conky/issues/145
-     double_buffer = true,
-     own_window = true,
-     own_window_argb_visual = true,
-     own_window_class = 'Conky',
-     own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-     own_window_transparent = true,
-     own_window_type = 'dock',
-     ############################
+     # double_buffer = true,
      # own_window = true,
+     # own_window_argb_visual = true,
      # own_window_class = 'Conky',
-     # own_window_type = 'desktop',
+     # own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+     # own_window_transparent = true,
+     # own_window_type = 'dock',
+     ############################
+      own_window = true,
+      own_window_class = 'Conky',
+      own_window_type = 'desktop',
      stippled_borders = 0,
      update_interval = 1.0,
      uppercase = false,
@@ -80,5 +80,11 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-${font :size=8}Version: 180513-2158 syswombat
+${font :size=8}Version: 180513-2208 syswombat
+
+${color}Distribution:${color 20a5e4} ${pre_exec lsb_release -ds | awk '{print $1}'}
+${color}Release     :${color 20a5e4} ${pre_exec lsb_release -ds | awk '{print $2}'} ${pre_exec lsb_release -ds | awk '{print $3}'}
+${color}Codename    :${color 20a5e4} ${pre_exec lsb_release -cs | awk '{print $1}'}
+# ${color}Desktop     :${color 20a5e4} KDE ${pre_exec kde4-config --version | grep KDE | awk '{print $4}'}
+${color}Desktop     :${color 20a5e4} KDE ${pre_exec konsole --version | grep KDE | awk '{print $4}'}
  ]]

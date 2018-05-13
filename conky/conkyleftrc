@@ -21,9 +21,18 @@ conky.config = {
      out_to_console = false,
      out_to_stderr = false,
      extra_newline = false,
+     ### plasma5 KDE ############
+     double_buffer = true,
      own_window = true,
+     own_window_argb_visual = true,
      own_window_class = 'Conky',
-     own_window_type = 'desktop',
+     own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+     own_window_transparent = true,
+     own_window_type = 'dock',
+     ############################
+     # own_window = true,
+     # own_window_class = 'Conky',
+     # own_window_type = 'desktop',
      stippled_borders = 0,
      update_interval = 1.0,
      uppercase = false,
@@ -70,5 +79,5 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-${font :size=8}Version: 180513-1218 syswombat
+${font :size=8}Version: 180513-2151 syswombat
  ]]

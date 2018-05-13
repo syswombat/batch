@@ -71,5 +71,5 @@ ${color 20a5e4}${upspeedgraph eno1}
 ${color 20a5e4}${downspeedgraph eno1}${color}
 ${upspeedgraph eno1}
 $hr
-${font :size=8}Version: 180513-2322 syswombat
+${font :size=8}Version: 180513-2327 syswombat
  ]]

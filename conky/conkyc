@@ -36,7 +36,7 @@ conky.config = {
  Hostname: ${nodename}
  Kernel:   ${kernel}
  $color}APT update: ${color D7D3C5}${execi 28800 /root/bin/debupdates.sh}
- ${pre_exec lsb_release -d | cut -f 2| tr "[:upper:]" "[:lower:]"}
+ ${exec lsb_release -d | cut -f 2| tr "[:upper:]" "[:lower:]"}
 $hr
 ###########################################
 ### Information about Battery and Power ###

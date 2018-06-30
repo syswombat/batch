@@ -1,0 +1,26 @@
+
+apt update -y
+apt upgrade -y
+apt install -y bash-completion
+
+// change Name
+hostnamectl set-hostname icinga2
+
+apt install -y apache2 
+apt install -y libapache2-mod-php7.0 
+apt install -y php7.0-xml
+apt install -y php7.0-opcache
+apt install -y php7.0-xml 
+apt install -y php7.0-mbstring 
+apt install -y php7.0-json 
+apt install -y php7.0-curl 
+apt install -y php7.0-ldap 
+apt install -y php7.0-cli 
+apt install -y php7.0-gd 
+apt install -y php7.0-intl 
+apt install -y php7.0-readline 
+apt install -y php7.0-pgsql
+apt install -y mariadb-server 
+apt install -y mariadb-client 
+apt install -y php7.0-mysql
+

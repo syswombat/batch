@@ -1,5 +1,5 @@
 ################################################################################
-#!/usr/bin/bash
+#!/bin/bash
 # Install Debian und Icinga2
 # if wget is not working do a ///  apt-get install ca-certificates
 # wget https://raw.githubusercontent.com/syswombat/batch/master/inst-icinga2web-master -O - > /tmp/inst-icinga2web-master
@@ -15,10 +15,10 @@ apt install -y vim-nox
 echo set number >> ~/.vimrc
 apt install -y net-tools
 
-// Change IP
+# Change IP
 
 
-// change Name
+# change Name
 hostnamectl set-hostname icinga2
 
 apt install -y apache2 
@@ -40,4 +40,4 @@ apt install -y mariadb-client
 apt install -y php7.0-mysql
 
 apt install -y python-pip
-// apt install -y python3-pip
+# apt install -y python3-pip

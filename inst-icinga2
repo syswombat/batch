@@ -20,8 +20,8 @@ apt install -y net-tools
 # change Name
 hostnamectl set-hostname icinga2-01
 
-apt install -y apache2 
-apt install -y libapache2-mod-php7.0 
+apt install -y apache2  
+apt install -y libapache2-mod-php7.0
 apt install -y php7.0-xml
 apt install -y php7.0-opcache
 apt install -y php7.0-xml 

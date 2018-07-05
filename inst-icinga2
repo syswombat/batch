@@ -1,9 +1,9 @@
 #!/bin/bash
 # Install Icinga2 on Debian 9
 # if wget is not working do a ///  apt-get install ca-certificates
-# wget https://raw.githubusercontent.com/syswombat/batch/master/inst-icinga2web-master -O - > /tmp/inst-icinga2web-master
-# chmod +x /tmp/inst-icinga2web-master
-# run with inst-icinga2web-master
+# wget https://raw.githubusercontent.com/syswombat/batch/master/inst-icinga2 -O - > /tmp/inst-icinga2
+# chmod +x /tmp/inst-icinga2
+# run with inst-icinga2
 # This file will run on my Network
 #################################################################################
 

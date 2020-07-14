@@ -4,9 +4,14 @@ apt update -y && apt upgrade -y && apt-get autoremove -y
 clear
 echo ---------------------------------
 hostnamectl
-echo - - - -
+echo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 uptime -p
 date +"%A %d. %B %Y | %T"
 ip a |grep inet
 # ip route get 1 | awk '{print $7;exit}'
-echo - - - -
+echo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+systemctl --type=service | grep failed
+echo " = = = systemctl infos mit = = = "
+echo "systemctl --type=service | grep failed"
+echo "systemctl --type=service"
+echo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

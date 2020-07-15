@@ -38,7 +38,7 @@ col=`tput cols`
 col=$[ $col -5 ]
 
 while [ $sec_rem -gt 0 ]; do 
-	clear 
+#	clear 
 	date 
 	let sec_rem=$sec_rem-1 
 	interval=$sec_rem 

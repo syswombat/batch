@@ -15,3 +15,7 @@ echo " = = = systemctl infos mit = = = "
 echo "systemctl --type=service | grep failed"
 echo "systemctl --type=service"
 echo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# on a MediaVault installation 
+systemctl status openmediavault-engined.service
+echo ===========================================
+systemctl status openmediavault-issue.service

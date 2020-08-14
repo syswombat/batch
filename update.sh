@@ -10,7 +10,7 @@ date +"%A %d. %B %Y | %T"
 ip a |grep inet
 # ip route get 1 | awk '{print $7;exit}'
 echo - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-systemctl --type=service | grep failed --no-pager
+systemctl --type=service | grep failed
 echo " = = = systemctl infos mit = = = "
 echo "systemctl --type=service | grep failed"
 echo "systemctl --type=service"

@@ -2,26 +2,19 @@
 # create a directory and subdirectory
 # /photos/newPhotos
 # /photos/sortedPhotos
-# add this file in the newPhotos directory
-# cd /photos/sortedPhotos
-# wget https://raw.githubusercontent.com/syswombat/batch/master/photo-sort.py
-# chmode 777 photo-sort.py
+
 # the file structure of the sorted photo will be
 # yyyy                     | 2016
-# yyyy/yyyy_mm             | 2016/2016_07
-# yyyy/yyyy_mm/yyyy_mm_dd  | 2016/2016_07/2016_07_14
+# yyyy/yyyy-mm             | 2016/2016-07
+# yyyy/yyyy-mm/yyyy-mm-dd  | 2016/2016-07/2016-07-14
 # 
 # to sort the RAW an Movies it will also create a
-# 2016/2016_07/2016_07_14/RAW
-# 2016/2016_07/2016_07_14/Movies
-# the jpg file will be in the root of the date directory (yyyy/yyyy_mm/yyyy_mm_dd)
+# 2016/2016-07/2016-07-14/RAW
+# 2016/2016-07/2016-07-14/Movies
+# the jpg file will be in the root of the date directory (yyyy/yyyy-mm/yyyy-mm-dd)
 #
-# file last modified 21.03.2017 by (c) vincent kocher
+# file last modified 06.09.2020 by (c) vincent kocher
 # ----------------------------------------------------------------------------------
-
-import shutil
-import os
-import datetime
 
 #Variablen change it
 START=/photos/newPhotos
@@ -29,26 +22,13 @@ ZIEL=/photos/sortedPhotos
 
 RAW=nef,nrw,mef,raw,rwl,dng,RW2
 Movie=MP4
-
 # end Variable
 
-os.chdir(START)
+the script shold
 
-bilder=[]
-for dat in os.listdir(os.getcwd()):
-      if dat.endswith('.jpg') or dat.endswith('.JPG'):
-            bilder.append(dat)
-            
-#ordner erstellen und kopieren
+1) read Start 
+2) take out the Create Date of the file
+3) move the file to Ziel and create the Dirctory structure if not there
+4) read the next file
 
-for bild in bilder:
-      aufnahme=str(datetime.date.fromtimestamp(os.path.getatime(bild)))
-      os.chdir(ZIEL)
-      if not os.path.isdir(aufnahme):
-          os.mkdir(aufnahme)
-          
-      os.chdir(START)
-      shutil.copy(bild, os.path.join(ZIEL, aufnahme))
-      os.remove(bild)
-      print bild, 'wurde nach ', aufnahme, 'verschoben'
-      print 'Vorgang abgeschlossen'
+
